@@ -1,6 +1,20 @@
 a{
     text-decoration: none;
 }
+.smooth{
+    background-color: #10C98F;
+    color: white;
+    font-size: 20px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
 #nav{
     // position: fixed;
     background-color: #26BE9F;
@@ -21,107 +35,6 @@ a{
 
     }
 }
-
-// #banner{
-//     background:linear-gradient(#20c99642, #20c99642), url("https://preview.colorlib.com/theme/easylo/assets/img/hero/h1_hero1.jpg.webp");
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//     // height: 100vh;
-//     .banner{
-//         // display:flex ;
-//         // align-items: center;
-//         // justify-content: space-between;
-//         padding: 100px 0;
-//         .banner-text{
-//             // width: 400px;
-//             display: flex;
-//             flex-direction: column;
-//             gap: 20px;
-//             h1{
-//                 font-size: 60px;
-//                 font-weight: bold;
-//                 color: white;
-//                 position: relative;
-//                 &::after{
-//                     position: absolute;
-//                     content: "";
-//                     top: 110%;
-//                     left: 0px;
-//                     background-color: white;
-//                     width: 100px;
-//                     height: 4px;
-//                 }
-//             }
-//             p{
-//                 color: white;
-//                 font-size: 25px;
-//                 font-weight: 600;
-//                 margin: 10px 0 10px 0;
-//             }
-//             a{
-//                 width: 200px;
-//                 padding: 16px 28px ;
-//                 text-align: center;
-//                 border: #ffffff 3px solid;
-//                 transition: all .3s ease;
-//                 color: white;
-//                 font-weight: 500;
-//                 &:hover{
-//                     background-color: #10C98F;
-//                     border-color: #10C98F;
-//                 }
-//             }
-//         }
-//         #input{
-//             width: 50%;
-//             background-color: white;
-//             padding: 50px;
-//             text-align: center;
-//             h2{
-//                 color: #0F4332;
-//             }
-//             >div{
-//                 margin-top: 40px;
-//                 text-align: start;
-//                 display: flex;
-//                 flex-direction: column;
-//                 gap:10px;
-//                 select{
-//                     padding: 9px;
-//                     border-color: rgba(128, 128, 128, 0.505);
-//                 }
-//                 p{
-//                     color: gray;
-//                     font-size: 12px ;
-//                     span{
-//                         color: #10C98F;
-//                         font-weight: bold;
-//                         font-size: 17px;
-//                     }
-//                 }
-//                 a{
-//                     color: white;
-//                     padding: 10px;
-//                     background-color: #10C98F;
-//                     text-align: center;
-//                 }
-//             }
-//             .alt-xett{
-//                 position: relative;
-//                 &::after{
-//                     position: absolute;
-//                     content: "";
-//                     top: 180%;
-//                     left: 100px;
-//                     width: 100px;
-//                     height: 4px;
-//                     background-color: #10C98F;
-//                 }
-//             }
-//         }
-//     }
-// }
 #banner{
     background:linear-gradient(#20c99642, #20c99642), url("https://preview.colorlib.com/theme/easylo/assets/img/hero/h1_hero1.jpg.webp");
     background-repeat: no-repeat;
