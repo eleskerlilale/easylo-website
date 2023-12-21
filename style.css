@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+}
+
+#nav {
+  position: fixed;
+  width: 100%;
+}
+#nav li {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+}
+#nav li a {
+  color: white;
+}
+#nav #nav-green {
+  padding: 12px 15px;
+  background-color: #10C98F;
+  font-size: 15px;
+}
+
+#banner {
+  background-image: url("https://preview.colorlib.com/theme/easylo/assets/img/hero/h1_hero1.jpg.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
+#banner .banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 100px 0;
+}
+#banner .banner .banner-text {
+  max-width: 350px;
+}
+#banner .banner .banner-text h1 {
+  font-size: 50px;
+  font-weight: bold;
+  color: white;
+}
+#banner .banner .banner-text p {
+  color: white;
+  font-size: 25px;
+  font-weight: 600;
+  margin: 10px 0 10px 0;
+}
+#banner .banner .banner-text a {
+  padding: 13px 30px;
+  text-align: center;
+  border: #ffffff 3px solid;
+  transition: all 0.3s ease;
+  color: white;
+  font-weight: 500;
+}
+#banner .banner .banner-text a:hover {
+  background-color: #10C98F;
+  border-color: #10C98F;
+}
+#banner .banner #input {
+  background-color: white;
+  padding: 20px;
+}
+#banner .banner #input > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+#banner .banner #input > div p {
+  font-size: 12px;
+}
+#banner .banner #input > div p span {
+  color: #10C98F;
+  font-weight: bold;
+  font-size: 17px;
+}
+#banner .banner #input > div a {
+  color: white;
+  padding: 10px;
+  background-color: #10C98F;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

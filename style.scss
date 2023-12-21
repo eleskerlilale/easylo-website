@@ -1,0 +1,85 @@
+a{
+    text-decoration: none;
+}
+#nav{
+    position: fixed;
+    width: 100%;
+    li{
+        color: white;
+        font-weight: bold;
+        font-size: 20px;
+        a{
+            color: white;
+        }
+    }
+    #nav-green{
+        padding: 12px 15px;
+        background-color: #10C98F;
+        font-size: 15px;
+
+    }
+}
+
+#banner{
+    background-image:url("https://preview.colorlib.com/theme/easylo/assets/img/hero/h1_hero1.jpg.webp");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    .banner{
+        display:flex ;
+        align-items: center;
+        justify-content: space-between;
+        padding: 100px 0;
+        .banner-text{
+            max-width: 350px;
+            h1{
+                font-size: 50px;
+                font-weight: bold;
+                color: white;
+            }
+            p{
+                color: white;
+                font-size: 25px;
+                font-weight: 600;
+                margin: 10px 0 10px 0;
+            }
+            a{
+                padding: 13px 30px ;
+                text-align: center;
+                border: #ffffff 3px solid;
+                transition: all .3s ease;
+                color: white;
+                font-weight: 500;
+                &:hover{
+                    background-color: #10C98F;
+                    border-color: #10C98F;
+                }
+            }
+        }
+        #input{
+            background-color: white;
+            padding: 20px;
+            >div{
+                display: flex;
+                flex-direction: column;
+                gap:5px;
+                p{
+                    font-size: 12px ;
+                    span{
+                        color: #10C98F;
+                        font-weight: bold;
+                        font-size: 17px;
+                    }
+                }
+                a{
+                    color: white;
+                    padding: 10px;
+                    background-color: #10C98F;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
