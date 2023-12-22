@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesign.css">
+</head>
+<body>
+    <section>
+        <h1>SignUp</h1>
+        <form class="category-form">
+            <div>
+                <input type="text" id="name" placeholder="Name">
+                <div class="symbol"></div>
+            </div>
+            <div>
+                <input type="text" id="email" placeholder="Email">
+                <div class="symbol"></div>
+            </div>
+            <div>
+                <input type="password" id="password1" placeholder="Password">
+                <div class="hidden"><i class="bi bi-eye-slash"></i></div>
+                <div class="symbol"></div>
+            </div>
+            <div>
+                <input type="password" id="password2" placeholder="Confirm Password">
+                <div class="hidden"><i class="bi bi-eye-slash"></i></div>
+                <div class="symbol"></div>
+            </div>
+            <button  id="submit" value="Submit" >Submit</button>
+        </form>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./sign-in.js"></script>
+</body>
+</html>

@@ -3,6 +3,7 @@ a{
 }
 .smooth{
     background-color: #10C98F;
+    display: none;
     color: white;
     font-size: 20px;
     position: fixed;
@@ -149,12 +150,39 @@ a{
                 }
             }
         }
+        .add{
+            padding:0px 18px 7px 18px;
+            border-radius: 50%;
+            background-color: #56ff8c;
+            color: white;
+            text-align: center;
+            font-size: 40px;
+            transition: all .3s ease;
+            &:hover{
+                background-color: #00b93b;
+            }
+        }
         .solution-row{
             .loan-card{
                 padding: 30px 10px;
-                i{
-                    color: #26BE9F;
-                    font-size: 60px;
+                .fav{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 60px;
+                    i{
+                        cursor: pointer;
+                    }
+                    .bi-heart-fill{
+                        color: red;
+                    }
+                }
+                .image{
+                    height: 50px;
+                    img{
+                        object-fit: contain;
+                        height: 100%;
+                    }
                 }
                 .title{
                     color: #006d22;
@@ -172,6 +200,27 @@ a{
                     font-weight: 600;
                     color: rgb(74, 74, 74);
                     font-size: 17px;
+                }
+                .buttons{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    button{
+                        text-align: center;
+                        border: none;
+                        background-color: #006d22;
+                        height: 30px;
+                        font-size: 15px;
+                        color: white;
+                    }
+                    a{
+                        padding: 5px 10px;
+                        font-size: 15px;
+                        text-align: center;
+                        height: 30px;
+                        background-color: #006d22;
+                        color: white;
+                    }
                 }
             }
         }
