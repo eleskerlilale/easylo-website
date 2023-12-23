@@ -17,8 +17,9 @@ a{
     cursor: pointer;
 }
 #nav{
-    // position: fixed;
-    background-color: #26BE9F;
+    z-index: 100;
+    position: fixed;
+    background-color: #30d8b7;
     width: 100%;
     li{
         color: white;
@@ -30,6 +31,7 @@ a{
         }
     }
     #nav-green{
+        // max-width: 90px;
         padding: 10px 20px;
         background-color: #10C98F;
         font-size: 15px;
@@ -42,7 +44,7 @@ a{
     background-position: center;
     background-size: cover;
     .banner{
-        padding: 50px 0;
+        padding: 100px 0;
         .left-banner{
             padding-bottom: 50px;
             // margin-left: 50px;
@@ -155,12 +157,11 @@ a{
             }
         }
         .add{
-            padding:0px 18px 7px 18px;
+            padding:0px 19px 7px 19px;
             margin-bottom: 20px;
             border-radius: 50%;
             background-color: #56ff8c;
             color: white;
-            text-align: center;
             font-size: 40px;
             transition: all .3s ease;
             &:hover{
@@ -210,19 +211,32 @@ a{
                     display: flex;
                     align-items: center;
                     gap: 10px;
+                    // width: 200px;
+                    height: 40px;
                     button{
+                        width: 70px;
                         text-align: center;
                         border: none;
                         background-color: #006d22;
-                        height: 30px;
+                        // height: 30px;
+                        height: 100%;
                         font-size: 15px;
                         color: white;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                     }
                     a{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
                         padding: 5px 10px;
                         font-size: 15px;
                         text-align: center;
-                        height: 30px;
+                        height: 100%;
+                        width: 70px;
                         background-color: #006d22;
                         color: white;
                     }

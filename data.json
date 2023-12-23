@@ -2,7 +2,7 @@
   "main": [
     {
       "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services1.svg",
-      "name": "Home Loanfxbgxdfgbdfgb",
+      "name": "Home Loan",
       "title": "What are my options and the cost to exercise?",
       "about": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost.",
       "id": 1
@@ -23,7 +23,6 @@
     }
   ],
   "signin": [
-
   ],
   "favorite": []
 }

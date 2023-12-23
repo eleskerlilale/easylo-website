@@ -74,16 +74,16 @@ submit.addEventListener('click', (e) => {
     if(obj.name=='' && obj.email=='' && obj.password==''){
         alert("xanalari doldur")
     }
-   else{
-    axios.get("http://localhost:3000/signin")
-    .then(r => {
-        let ids= r.data.find( f => f.email === obj.email)
-        if(!ids){
-            axios.post("http://localhost:3000/signin", obj)
-            window.location='./index.html'
-        }else{
-            alert("tekrarlanmis melumat")
-        }
-    })
-   }
+    else{
+        axios.get("http://localhost:3000/signin")
+        .then(r => {
+            let ids= r.data.find( f => f.email === obj.email)
+            if(!ids){
+                axios.post("http://localhost:3000/signin", obj)
+                window.location='./index.html'
+            }else{
+                alert("tekrarlanmis melumat")
+            }
+        })
+    }
 })
