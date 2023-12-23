@@ -89,7 +89,7 @@ function item(){
 item()
 
 function delFunc(id){
-    console.log(id)
+    console.log(id) 
     axios.delete("http://localhost:3000/main/"+id)
     window.location.reload()
 }
@@ -101,14 +101,17 @@ function favorite(id){
     .then(data => {
         axios.get("http://localhost:3000/favorite")
         .then(r => {
-           
+
                 let ids = r.data.find(f => f.id === data.id);
+
                 if (!ids) {
-                    favicon.innerHTML=`<i class="bi bi-heart-fill></i>`
+                    favicon.classList.add("bi-heart-fill")
+                    favicon.classList.remove("bi-heart")
                     axios.post(`http://localhost:3000/favorite`, data)
                 }
                 else {
-                    favicon.innerHTML=`<i class="bi bi-heart></i>`
+                    favicon.classList.remove("bi-heart-fill")
+                    favicon.classList.add("bi-heart")
                     axios.delete(`http://localhost:3000/favorite/${ids.id}`)
                 }
            

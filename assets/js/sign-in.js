@@ -1,7 +1,4 @@
-// const url=new URLSearchParams(window.location.search)
-
 const passwords=document.querySelectorAll("input[type='password']")
-
 const password1=document.querySelector("#password1")
 const password2=document.querySelector("#password2")
 const submit=document.querySelector("#submit")
@@ -75,31 +72,18 @@ for (let i=0; i<hidden.length; i++){
 submit.addEventListener('click', (e) => {
     e.preventDefault()
     if(obj.name=='' && obj.email=='' && obj.password==''){
-        alert("melumat dogru deyil")
+        alert("xanalari doldur")
     }
    else{
-    axios.post("http://localhost:3000/signin", obj)
-    console.log("isledi")
-    window.location="./index.html"
-    // axios.get("http://localhost:3000/signin")
-    // .then(res => res.data)
-    // .then(data => {
-    //     if(data.length ==0 ){
-    //         axios.post("http://localhost:3000/signin", obj)
-    //         window.location="./index.html"
-    //     }else{
-    //         data.forEach(element => {
-    //             if(element.email==obj.email){
-    //                 alert("eyni melumat")
-    //             }else{
-    //                 axios.post("http://localhost:3000/signin", obj)
-    //                 console.log("isledi")
-    //                 window.location="./index.html"
-                    
-    //             }                
-    //         })
-    //     }
-    // })
+    axios.get("http://localhost:3000/signin")
+    .then(r => {
+        let ids= r.data.find( f => f.email === obj.email)
+        if(!ids){
+            axios.post("http://localhost:3000/signin", obj)
+            window.location='./index.html'
+        }else{
+            alert("tekrarlanmis melumat")
+        }
+    })
    }
 })
-

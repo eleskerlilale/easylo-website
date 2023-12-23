@@ -22,14 +22,8 @@
       "about": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
     }
   ],
-  "signin": [],
-  "favorite": [
-    {
-      "id": 3,
-      "image": "https://preview.colorlib.com/theme/easylo/assets/img/icon/services3.svg",
-      "name": "Business Loan",
-      "title": "I own my shares - can I get liquidity now without selling?",
-      "about": "Tools such as a profit and tax calculator show the value of your stock options and exercise cost."
-    }
-  ]
+  "signin": [
+
+  ],
+  "favorite": []
 }
