@@ -2,7 +2,10 @@ const smooth=document.createElement("div")
 smooth.classList.add('smooth');
 smooth.innerHTML=`<i class="bi bi-arrow-up"></i>`
 document.body.append(smooth)
-
+const favoritefav=document.querySelector(".favorite-fav")
+// favoritefav.addEventListener("click",() =>{
+// console.log("djfajldb")
+// })
 window.addEventListener("scroll" , () => {
     if(document.body.scrollTop>500 || document.documentElement.scrollTop>500){
         smooth.style.display='block'
@@ -12,7 +15,7 @@ window.addEventListener("scroll" , () => {
 })
 smooth.addEventListener("click", () => {
     window.scroll({
-        top: 100,
+        top: 0,
         left: 0,
         behavior: "smooth",
       });
@@ -21,9 +24,11 @@ smooth.addEventListener("click", () => {
 
 const row=document.querySelector(".solution-row");
 const signIn=document.querySelector(".sign-in");
+const loadMore=document.querySelector(".load-more")
 console.log(signIn)
+let page=1;
 function item(){
-    axios.get("http://localhost:3000/main")
+    axios.get(`http://localhost:3000/main/?_page=${page}&_limit=3`)
     .then(res => res.data)
     .then(data => {
         data.forEach(element => {
@@ -74,8 +79,6 @@ function item(){
                         }
                     })
             })
-           
-            
         });
     
     axios.get("http://localhost:3000/signin")
@@ -88,9 +91,21 @@ function item(){
 }
 item()
 
+loadMore.addEventListener("click", () => {
+    page++
+    item()
+    axios.get("http://localhost:3000/main/")
+    .then(res =>res.data)
+    .then(data => {
+        if(data.length<=page*3){
+            loadMore.remove()
+        }
+    })
+})
 function delFunc(id){
     console.log(id) 
     axios.delete("http://localhost:3000/main/"+id)
+    axios.delete("http://localhost:3000/favorite/"+id)
     window.location.reload()
 }
 

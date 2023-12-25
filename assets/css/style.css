@@ -130,10 +130,11 @@ a {
 }
 
 #solution .solution {
-  padding: 50px 0;
+  padding: 100px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
 #solution .solution .header {
   display: flex;
@@ -155,17 +156,45 @@ a {
   left: 40%;
   bottom: 70px;
 }
-#solution .solution .add {
-  padding: 0px 19px 7px 19px;
+#solution .solution .add-fav {
+  display: flex;
+  gap: 20px;
+  height: 50px;
+}
+#solution .solution .add-fav .add-a {
+  width: 50px;
+  height: 100%;
   margin-bottom: 20px;
-  border-radius: 50%;
-  background-color: #56ff8c;
+  border-radius: 10px;
+  background-color: #00b93b;
   color: white;
   font-size: 40px;
   transition: all 0.3s ease;
+  position: relative;
 }
-#solution .solution .add:hover {
+#solution .solution .add-fav .add-a a {
+  position: absolute;
+  top: -10px;
+  left: 11px;
+  color: white;
+}
+#solution .solution .add-fav .add-a:hover {
+  background-color: #006d22;
+}
+#solution .solution .add-fav > div {
+  border-radius: 10px;
   background-color: #00b93b;
+  color: white;
+  transition: all 0.3s ease;
+  height: 100%;
+  padding: 12px 20px;
+  cursor: pointer;
+}
+#solution .solution .add-fav > div a {
+  color: white;
+}
+#solution .solution .add-fav > div:hover {
+  background-color: #006d22;
 }
 #solution .solution .solution-row .loan-card {
   padding: 30px 10px;
@@ -211,13 +240,14 @@ a {
   display: flex;
   align-items: center;
   gap: 10px;
+  width: 100%;
   height: 40px;
 }
 #solution .solution .solution-row .loan-card .buttons button {
   width: 70px;
   text-align: center;
   border: none;
-  background-color: #006d22;
+  background-color: #00b93b;
   height: 100%;
   font-size: 15px;
   color: white;
@@ -225,6 +255,11 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#solution .solution .solution-row .loan-card .buttons button:hover {
+  background-color: #006d22;
 }
 #solution .solution .solution-row .loan-card .buttons a {
   display: flex;
@@ -236,8 +271,27 @@ a {
   text-align: center;
   height: 100%;
   width: 70px;
-  background-color: #006d22;
+  background-color: #00b93b;
   color: white;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+#solution .solution .solution-row .loan-card .buttons a:hover {
+  background-color: #006d22;
+}
+#solution .solution .load-more {
+  width: 150px;
+  font-size: 20px;
+  background-color: #00b93b;
+  color: white;
+  transition: all 0.3s ease;
+  padding: 10px 0 12px 0;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#solution .solution .load-more:hover {
+  background-color: #006d22;
 }
 
 #project {

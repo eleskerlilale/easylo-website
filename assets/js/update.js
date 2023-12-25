@@ -36,6 +36,7 @@ save.addEventListener("click", (e) => {
                 about:about.value
             }
         )
+     window.location='./index.html'
     }else{
         axios.post("http://localhost:3000/main/", 
         {
@@ -45,9 +46,8 @@ save.addEventListener("click", (e) => {
             about:about.value
         }
      )
-    }
      window.location='./index.html'
-     console.log(name.value, title.value, about.value)
+    }
 })
 
 cancel.addEventListener("click", () => {
